@@ -2,16 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Parent from './componets/Parent';
+// import CounterUseReducer from './componets/CounterUseRedecuer';
 // import App from './App';
 // import Hello from './componets/Hello';
-import CounterUseState from './componets/CouterUseState';
+// import CounterUseState from './componets/CouterUseState';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <CounterUseState initialValue={1} />
+    <Parent />
+    {/* <CounterUseState initialValue={0} /> */}
+    {/* <CounterUseReducer initialValue={0} /> */}
   </React.StrictMode>
 );
 
